@@ -34,6 +34,7 @@ public class MoveZeroes {
                 // swap nums[slow] and nums[fast]
                 nums[slow] = nums[fast];
                 nums[fast] = 0;
+                System.out.println(Arrays.toString(nums));
 
                 slow++;
             }

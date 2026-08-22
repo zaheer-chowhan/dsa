@@ -1,4 +1,4 @@
-package com.java.dsa;
+package com.java.dsa.linkedlist;
 
 
 import java.util.Arrays;
@@ -31,10 +31,14 @@ public class ReverseLinkedList {
     public static void main(String[] args) {
 
         ListNode listNode = new ListNode(1);
-        ListNode secondNode = new ListNode(2);
+        ListNode secondNode = new ListNode(1);
         listNode.next = secondNode;
-        ListNode thirdNode = new ListNode(3);
+        ListNode thirdNode = new ListNode(2);
         secondNode.next = thirdNode;
+        ListNode fourthNode = new ListNode(2);
+        thirdNode.next = fourthNode;
+        ListNode fifthNode = new ListNode(4);
+        fourthNode.next = fifthNode;
 
         reverseList(listNode);
 //        System.out.println("listNode ::"+ reverseList(listNode));
